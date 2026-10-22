@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: rgba(161, 0, 0, 0.3);
+  padding-bottom: 64px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ===== Sida ===== */
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.hero {
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid #fcfcfc;
+}
+
+.recipe {
+  padding: 48px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #a30000;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 32px 0 16px;
+}
+
+.intro {
+  background-color: #eeeeee;
+  padding: 8px 16px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+  line-height: 2;
+}
+
+p + ul {
+  margin-top: 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.gallery img {
+  height: 467px;
+  object-fit: cover;
+  background-color: #d9d9d9;
+}
+
+/* Mobil veiw */
+@media (max-width: 600px) {
+  .recipe {
+    padding: 16px;
+  }
+}
